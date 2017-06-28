@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProyectoConsula.Models.Pregunta>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IMG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdF_Opcion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IMG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdF_Opcion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdT_Pregunta }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdT_Pregunta }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdT_Pregunta })
+        </td>
+    </tr>
+}
+
+</table>

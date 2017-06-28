@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ProyectoConsula.Models.Curso>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_CursoRequisito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Autorizado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdF_Pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NotaMinima)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Visible)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaModificacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser1.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_CursoRequisito)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Autorizado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdF_Pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NotaMinima)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Visible)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaCreacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaModificacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser1.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdT_Curso }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdT_Curso }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdT_Curso })
+        </td>
+    </tr>
+}
+
+</table>

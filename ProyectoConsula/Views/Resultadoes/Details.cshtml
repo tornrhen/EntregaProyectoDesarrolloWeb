@@ -1,0 +1,42 @@
+﻿@model ProyectoConsula.Models.Resultado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resultado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Intento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Intento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prueba.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prueba.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Respuesta.IdF_Usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Respuesta.IdF_Usuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdT_Resultado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DAVModelStoreContainer" CdmEntityContainer="DAVEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="DAVModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="DAVModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="DAVModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="DAVModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="DAVModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contenidos">
+      <EntityTypeMapping TypeName="DAVModel.Contenido">
+        <MappingFragment StoreEntitySet="Contenidos">
+          <ScalarProperty Name="IdT_Contenido" ColumnName="IdT_Contenido" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Archivo" ColumnName="Archivo" />
+          <ScalarProperty Name="Enlace" ColumnName="Enlace" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cursos">
+      <EntityTypeMapping TypeName="DAVModel.Curso">
+        <MappingFragment StoreEntitySet="Cursos">
+          <ScalarProperty Name="IdT_Curso" ColumnName="IdT_Curso" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id_CursoRequisito" ColumnName="Id_CursoRequisito" />
+          <ScalarProperty Name="Autorizado" ColumnName="Autorizado" />
+          <ScalarProperty Name="IdF_Pais" ColumnName="IdF_Pais" />
+          <ScalarProperty Name="NotaMinima" ColumnName="NotaMinima" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="IdF_UsuarioCreacion" ColumnName="IdF_UsuarioCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IdF_UsuarioModificacion" ColumnName="IdF_UsuarioModificacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Opciones">
+      <EntityTypeMapping TypeName="DAVModel.Opcione">
+        <MappingFragment StoreEntitySet="Opciones">
+          <ScalarProperty Name="IdT_Opcion" ColumnName="IdT_Opcion" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Preguntas">
+      <EntityTypeMapping TypeName="DAVModel.Pregunta">
+        <MappingFragment StoreEntitySet="Preguntas">
+          <ScalarProperty Name="IdT_Pregunta" ColumnName="IdT_Pregunta" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="IMG" ColumnName="IMG" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdF_Opcion" ColumnName="IdF_Opcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pruebas">
+      <EntityTypeMapping TypeName="DAVModel.Prueba">
+        <MappingFragment StoreEntitySet="Pruebas">
+          <ScalarProperty Name="IdT_Prueba" ColumnName="IdT_Prueba" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Intentos" ColumnName="Intentos" />
+          <ScalarProperty Name="Aleatorio" ColumnName="Aleatorio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respuestas">
+      <EntityTypeMapping TypeName="DAVModel.Respuesta">
+        <MappingFragment StoreEntitySet="Respuestas">
+          <ScalarProperty Name="IdT_Respuesta" ColumnName="IdT_Respuesta" />
+          <ScalarProperty Name="IdF_Pregunta" ColumnName="IdF_Pregunta" />
+          <ScalarProperty Name="IdF_Prueba" ColumnName="IdF_Prueba" />
+          <ScalarProperty Name="IdF_Usuario" ColumnName="IdF_Usuario" />
+          <ScalarProperty Name="TituloRespuesta" ColumnName="TituloRespuesta" />
+          <ScalarProperty Name="TextoRespuesta" ColumnName="TextoRespuesta" />
+          <ScalarProperty Name="Correcto" ColumnName="Correcto" />
+          <ScalarProperty Name="Ponderacion" ColumnName="Ponderacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resultados">
+      <EntityTypeMapping TypeName="DAVModel.Resultado">
+        <MappingFragment StoreEntitySet="Resultados">
+          <ScalarProperty Name="IdT_Resultado" ColumnName="IdT_Resultado" />
+          <ScalarProperty Name="IdF_Respuesta" ColumnName="IdF_Respuesta" />
+          <ScalarProperty Name="IdF_Prueba" ColumnName="IdF_Prueba" />
+          <ScalarProperty Name="Intento" ColumnName="Intento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Segmentos">
+      <EntityTypeMapping TypeName="DAVModel.Segmento">
+        <MappingFragment StoreEntitySet="Segmentos">
+          <ScalarProperty Name="IdT_Segmento" ColumnName="IdT_Segmento" />
+          <ScalarProperty Name="IdF_Curso" ColumnName="IdF_Curso" />
+          <ScalarProperty Name="Id_SegmentoPadre" ColumnName="Id_SegmentoPadre" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="IdF_Pais" ColumnName="IdF_Pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="DAVModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Contenidos_X_Segmentos" TypeName="DAVModel.Contenidos_X_Segmentos" StoreEntitySet="Contenidos_X_Segmentos">
+      <EndProperty Name="Contenidos">
+        <ScalarProperty Name="IdT_Contenido" ColumnName="IdF_Contenido" />
+      </EndProperty>
+      <EndProperty Name="Segmentos">
+        <ScalarProperty Name="IdT_Segmento" ColumnName="IdF_Segmento" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ProyectoConsula.Models.Respuesta>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TituloRespuesta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TextoRespuesta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Correcto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ponderacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pregunta.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prueba.Titulo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TituloRespuesta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TextoRespuesta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Correcto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ponderacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pregunta.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prueba.Titulo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdT_Respuesta }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdT_Respuesta }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdT_Respuesta })
+        </td>
+    </tr>
+}
+
+</table>
